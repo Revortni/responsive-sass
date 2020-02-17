@@ -1,0 +1,100 @@
+// ==========================================================================
+// Config
+// Define variables, maps and fonts at this partial.
+// ==========================================================================
+
+//Enter your Web Address here for print media
+$domain-name: "www.domain-name.com";
+
+//Text
+$base__font-size: 16px;
+$base__line: 24px;
+
+$font-family-sans-fallback: "Arial", sans-serif;
+$font-family-sans: "Source Sans Pro", "Helvetica Neue", "Helvetica",
+  $font-family-sans-fallback;
+$font-family-serif: roboto, sans-serif;
+$font-family-monospace: "Inconsolata", "Menlo", "Consolas",
+  "Bitstream Vera Sans Mono", "Courier", monospace;
+$font-family-sans-serif: "Muli", sans-serif;
+$font-family--primary: "Roboto";
+$font-family--secondary: "Roboto";
+
+//Colors
+
+$blue: #3a539b;
+$red: #ef5350;
+$white: #ffffff;
+$black: #333333;
+$light: #e6ecef;
+$light-gray: #b3b3b3;
+$dark-gray: #555555;
+$gray: #9e9e9e;
+$light-blue: #42a5f5;
+$yellow: #ffca28;
+$green-active: #2dcc70;
+$green: #66bb6a;
+$whitish: #f4f7f9;
+
+//Message Colors
+$error: lighten($red, 5%) !default;
+$success: $green !default;
+$edit: $yellow !default;
+
+//Breakpoints
+$sm-device: 576px;
+$md-device: 768px;
+$lg-device: 992px;
+$xl-device: 1152px;
+
+//UI Colors
+$ui-colors: (
+  default: $blue,
+  success: $success,
+  error: $error,
+  warning: $edit
+);
+
+//Color Palette
+$palettes: (
+  gray-shades: (
+    base: $gray,
+    dark: darken($gray, 20%),
+    light: lighten($gray, 20%)
+  ),
+  blue-shades: (
+    base: $blue,
+    dark: darken($blue, 20%),
+    light: lighten($blue, 20%)
+  )
+);
+
+//Font size variables
+$default-font-size: $base__font-size - 2px;
+$s-font-size: $default-font-size - 2px;
+$xs-font-size: $default-font-size - 4px;
+$lg-font-size: $default-font-size + 2px;
+
+//Heading font size vairables
+$heading-line-height: 28px !default;
+$head1-font-size: 24px !default;
+$head2-font-size: $head1-font-size - 8px !default;
+$head3-font-size: $head1-font-size - 10px !default;
+$head4-font-size: $head1-font-size - 12px !default;
+
+//Color Usage
+$primary-color: $white;
+$secondary-color: $black;
+$accent-color: $gray;
+$shadow-color: rgba($black, 0.2);
+$border-color: $light;
+$color-text: $white;
+$color-link: $dark-gray;
+$color-warn: $yellow;
+$color-success: $green;
+$color-danger: $red;
+$color-state--blue: $light-blue;
+$color-state--green: $green-active;
+
+//Path to Assets
+$path--rel: "../images";

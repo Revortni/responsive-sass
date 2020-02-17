@@ -1,0 +1,77 @@
+// ==========================================================================
+// Helpers
+// Helpers classes such as object classes used for floating an element left and right,
+// text alignments etc. are included here.
+// Simple helper classes are generally referred using class selectors and their css properties
+// will have an !important property attached to it, so that a helper class cannot be overwritten.
+// Placeholders can also be included in the helper partial for these purposes.
+// ==========================================================================
+
+//Screen reader text:
+.srt {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+%clearfix-none {
+  display: inherit;
+}
+%pseudos {
+  display: block;
+  content: "";
+  position: absolute;
+}
+%shadow {
+  -webkit-box-shadow: 0px 8px 12px -6px transparentize($black, 0.8);
+  -moz-box-shadow: 0px 8px 12px -6px transparentize($black, 0.8);
+  box-shadow: 0px 8px 12px -6px transparentize($black, 0.8);
+}
+%ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mr-10px {
+  margin-right: 10px;
+}
+
+.rounded {
+  border-radius: 50%;
+
+  @include m(border) {
+    border: 1px solid #b3b3b3;
+  }
+}
+
+.text--black {
+  color: $black;
+}
+
+/* Flex begins*/
+.flex {
+  display: flex;
+
+  @include m(a-center) {
+    align-items: center;
+  }
+
+  @include m(j-start) {
+    justify-content: flex-start;
+  }
+
+  @include m(j-spacebtn) {
+    justify-content: space-between;
+  }
+
+  @include m(wrap) {
+    flex-wrap: wrap;
+  }
+}
+
+/* Flex ends*/
