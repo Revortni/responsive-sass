@@ -1,14 +1,10 @@
 .header {
-  background: url("../../images/bg.png");
+  background: url("../images/bg.png");
   background-size: cover;
   background-position: center;
 
   @include e(sub-header) {
     background: rgba(0, 0, 0, 0.4);
-
-    @include mq("md") {
-      background: rgba(0, 0, 0, 0.4);
-    }
 
     @include mq("xl") {
       background: none;
@@ -65,7 +61,6 @@
   padding-top: 112px;
   padding-bottom: 76px;
   font-style: normal;
-
   width: 100%;
 
   @include mq("md") {
