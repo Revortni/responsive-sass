@@ -23,7 +23,7 @@
     "deploy": "npm run build && gh-pages -d dist"
   },
   "license": "MIT",
-  "homepage": "https://revortni.github.io/Sass-responsive/",
+  "homepage": "https://revortni.github.io/responsive-sass/",
   "devDependencies": {
     "autoprefixer": "^6.7.7",
     "connect-history-api-fallback": "^1.6.0",
