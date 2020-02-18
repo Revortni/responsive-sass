@@ -27,7 +27,7 @@ $container-max-widths: (
 $grid-container: "container";
 $grid-container-fluid: "container-fluid";
 $row-name: "row";
-$grid-type: flex; //type of grid (either 'float' or 'flex' only)
+$grid-type: float; //type of grid (either 'float' or 'flex' only)
 
 // Common properties for container class
 %common-container {

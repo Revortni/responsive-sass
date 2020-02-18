@@ -1,5 +1,6 @@
 .logo {
   float: left;
+  color: $white;
   font-weight: 300;
   font-size: 18px;
   line-height: 22px;
@@ -27,15 +28,24 @@
 }
 
 .tab {
-  @extend .social-icon;
-
+  display: none;
+  border-radius: 3px;
   padding: 18px 14px;
+  color: $white;
 
-  & > i {
-    margin-right: 5px;
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
   }
 
-  & > span {
+  @include mq("md") {
+    display: inline;
+  }
+
+  @include mq("xl") {
+    display: inline;
+  }
+
+  @include e(text) {
     text-transform: uppercase;
     font-size: 12px;
     line-height: 14px;

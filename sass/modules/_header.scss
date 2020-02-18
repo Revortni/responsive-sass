@@ -2,6 +2,7 @@
   background: url("../images/bg.png");
   background-size: cover;
   background-position: center;
+  color: $white;
 
   @include e(sub-header) {
     background: rgba(0, 0, 0, 0.4);

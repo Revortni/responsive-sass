@@ -32,7 +32,7 @@ body {
   color: $color-text;
   font-family: $font-family--primary;
   text-rendering: optimizeLegibility;
-  background-color: $white;
+  background-color: #cccccc;
   font-weight: 400;
 }
 a {
@@ -67,7 +67,7 @@ h1 {
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: normal;
   font-size: $head2-font-size;
 }
 

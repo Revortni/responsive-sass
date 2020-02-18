@@ -1,0 +1,64 @@
+.team {
+  @include e(title) {
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    padding-bottom: 86px;
+  }
+}
+
+.team-member {
+  @include e(image) {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+
+  @include e(info) {
+    font-weight: 500;
+    font-size: 18.2px;
+    line-height: 21px;
+    color: $color-title;
+    text-align: center;
+
+    span {
+      font-weight: 500;
+      font-size: 13.65px;
+      line-height: 16px;
+      color: $light;
+      display: block;
+      text-align: center;
+      text-transform: capitalize;
+      margin-top: 7px;
+    }
+  }
+
+  @include e(details) {
+    padding: 34px 16px 24px 16px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: $gray;
+  }
+
+  @include e(icons) {
+    text-align: center;
+    padding-bottom: 19px;
+
+    i {
+      margin: 0 15px;
+    }
+  }
+}
+
+.avatar {
+  border-radius: 50%;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}

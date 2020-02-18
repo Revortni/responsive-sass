@@ -1,12 +1,19 @@
 .button {
-  background: #f44336;
+  background: $gray;
   box-shadow: 0px 2px 2px rgba(244, 67, 54, 0.14);
+  border: none;
   border-radius: 3px;
+  color: $white;
   padding: 13px 30px;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 16px;
   display: inline-block;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
 
   @include e(icon) {
     margin-right: 3px;
@@ -51,25 +58,24 @@
 
   /*button color starts*/
 
-  @include m(danger) {
-    background-color: #f44336;
+  @include m(primary) {
+    background-color: $violet;
+  }
+
+  @include m(info) {
+    background-color: $light-blue;
+  }
+
+  @include m(success) {
+    background-color: $green;
+  }
+
+  @include m(warn) {
+    background-color: $yellow;
   }
 
   @include m(danger) {
-    background-color: #f44336;
+    background-color: $red;
   }
-
-  @include m(danger) {
-    background-color: #f44336;
-  }
-
-  @include m(danger) {
-    background-color: #f44336;
-  }
-
-  @include m(danger) {
-    background-color: #f44336;
-  }
-
   /*button color ends*/
 }

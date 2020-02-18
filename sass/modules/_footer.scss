@@ -1,0 +1,25 @@
+.footer {
+  padding-top: 32px;
+  padding-bottom: 18px;
+
+  @include e(nav) {
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+
+  @include e(link) {
+    text-transform: uppercase;
+    color: $color-title;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 32px;
+  }
+
+  @include e(copyright) {
+    font-size: 10px;
+    line-height: 11px;
+    color: $dark-black;
+    text-align: center;
+  }
+}

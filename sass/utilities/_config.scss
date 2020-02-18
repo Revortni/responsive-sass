@@ -25,12 +25,15 @@ $font-family--secondary: "Roboto";
 $blue: #3a539b;
 $red: #f44336;
 $white: #ffffff;
+$dark-black: #000000;
 $black: #333333;
 $gray: #999999;
 $light-blue: #03a9f4;
 $yellow: #fbc02d;
 $green: #4caf50;
 $violet: #9c27b4;
+$dark-gray: #3c4858;
+$light: #777777;
 
 //Message Colors
 $error: lighten($red, 5%) !default;
@@ -90,7 +93,8 @@ $color-danger: $red;
 $accent-color: $gray;
 $shadow-color: rgba($black, 0.2);
 $border-color: $gray;
-$color-text: $white;
+$color-text: $gray;
+$color-title: $dark-gray;
 $color-link: $gray;
 
 //Path to Assets

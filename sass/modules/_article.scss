@@ -1,0 +1,35 @@
+.article {
+  @include e(wrapper) {
+    padding-bottom: 108px;
+    margin: 0 38px;
+  }
+
+  @include e(image) {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @include e(title) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: $dark-gray;
+    text-align: center;
+  }
+
+  @include e(content) {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: $color-text;
+    margin-top: 18px;
+  }
+}

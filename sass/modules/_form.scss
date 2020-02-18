@@ -1,0 +1,22 @@
+.form-container {
+  padding-top: 174px;
+  padding-bottom: 80px;
+}
+
+.form {
+  width: 100%;
+  @include e(title) {
+  }
+
+  @include e(details) {
+    margin: 37px 12px 48px 12px;
+    font-weight: 300;
+    font-size: 18.2px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  @include e(submit-button) {
+    text-align: center;
+  }
+}
