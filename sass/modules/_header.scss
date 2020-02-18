@@ -1,5 +1,5 @@
 .header {
-  background: url("../../images/bg.png");
+  background: url("../images/bg.png");
   background-size: cover;
   background-position: center;
 
@@ -34,26 +34,6 @@
 
   @include e(options) {
     float: right;
-  }
-
-  @include e(link) {
-    color: #fff;
-    margin: 0 12px;
-    display: none;
-
-    & > span {
-      text-transform: uppercase;
-      font-size: 12px;
-      line-height: 14px;
-    }
-
-    @include mq("md") {
-      display: inline;
-    }
-
-    @include mq("xl") {
-      display: inline;
-    }
   }
 }
 

@@ -23,18 +23,14 @@ $font-family--secondary: "Roboto";
 //Colors
 
 $blue: #3a539b;
-$red: #ef5350;
+$red: #f44336;
 $white: #ffffff;
 $black: #333333;
-$light: #e6ecef;
-$light-gray: #b3b3b3;
-$dark-gray: #555555;
-$gray: #9e9e9e;
-$light-blue: #42a5f5;
-$yellow: #ffca28;
-$green-active: #2dcc70;
-$green: #66bb6a;
-$whitish: #f4f7f9;
+$gray: #999999;
+$light-blue: #03a9f4;
+$yellow: #fbc02d;
+$green: #4caf50;
+$violet: #9c27b4;
 
 //Message Colors
 $error: lighten($red, 5%) !default;
@@ -82,19 +78,20 @@ $head2-font-size: $head1-font-size - 8px !default;
 $head3-font-size: $head1-font-size - 10px !default;
 $head4-font-size: $head1-font-size - 12px !default;
 
+// colors
+$color-default: $white;
+$color-primary: $violet;
+$color-info: $light-blue;
+$color-success: $green;
+$color-warn: $yellow;
+$color-danger: $red;
+
 //Color Usage
-$primary-color: $white;
-$secondary-color: $black;
 $accent-color: $gray;
 $shadow-color: rgba($black, 0.2);
-$border-color: $light;
+$border-color: $gray;
 $color-text: $white;
-$color-link: $dark-gray;
-$color-warn: $yellow;
-$color-success: $green;
-$color-danger: $red;
-$color-state--blue: $light-blue;
-$color-state--green: $green-active;
+$color-link: $gray;
 
 //Path to Assets
 $path--rel: "../images";

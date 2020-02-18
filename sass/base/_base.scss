@@ -12,12 +12,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
 
-*::after {
-  display: block;
-  content: "";
-  clear: both;
+  @if $grid-type == "float" {
+    &:after {
+      clear: both;
+      content: "";
+      display: block;
+    }
+  }
 }
 
 // Base Code
@@ -30,7 +32,7 @@ body {
   color: $color-text;
   font-family: $font-family--primary;
   text-rendering: optimizeLegibility;
-  background-color: $whitish;
+  background-color: $white;
   font-weight: 400;
 }
 a {

@@ -6,9 +6,70 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 16px;
+  display: inline-block;
+
+  @include e(icon) {
+    margin-right: 3px;
+  }
+
+  /*button modifiers*/
+
+  /*button style starts*/
+
+  @include m(text) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  @include m(icon) {
+    padding: 12px;
+  }
+
+  @include m(round) {
+    border-radius: 25pc;
+  }
+
+  @include m(with-icon) {
+    padding-right: 25px;
+  }
+
+  /*button style ends*/
+
+  /*button size starts*/
+  @include m(xs) {
+    padding: 6px 15px;
+  }
+
+  @include m(s) {
+    padding: 6px 20px;
+  }
+
+  @include m(l) {
+    padding: 18px 36px;
+  }
+  /*button size ends*/
+
+  /*button color starts*/
 
   @include m(danger) {
     background-color: #f44336;
-    display: inline-block;
   }
+
+  @include m(danger) {
+    background-color: #f44336;
+  }
+
+  @include m(danger) {
+    background-color: #f44336;
+  }
+
+  @include m(danger) {
+    background-color: #f44336;
+  }
+
+  @include m(danger) {
+    background-color: #f44336;
+  }
+
+  /*button color ends*/
 }

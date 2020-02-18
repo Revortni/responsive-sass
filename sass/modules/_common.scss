@@ -6,3 +6,38 @@
   text-transform: capitalize;
   padding: 15px 0 25px 0;
 }
+
+.social-icon {
+  padding: 16px 20px;
+  color: #fff;
+  display: none;
+  border-radius: 3px;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  @include mq("md") {
+    display: inline;
+  }
+
+  @include mq("xl") {
+    display: inline;
+  }
+}
+
+.tab {
+  @extend .social-icon;
+
+  padding: 18px 14px;
+
+  & > i {
+    margin-right: 5px;
+  }
+
+  & > span {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
