@@ -1,0 +1,67 @@
+.header {
+  background: url("../images/bg.png");
+  background-size: cover;
+  background-position: center;
+  color: $white;
+
+  @include e(sub-header) {
+    background: rgba(0, 0, 0, 0.4);
+
+    @include mq("xl") {
+      background: none;
+    }
+  }
+
+  @include e(right) {
+    float: right;
+  }
+}
+
+.menu {
+  margin: 18px 10px 30px 0;
+
+  @include e(icon) {
+    display: block;
+    float: right;
+
+    @include mq("md") {
+      display: none;
+    }
+
+    @include mq("xl") {
+      display: none;
+    }
+  }
+
+  @include e(options) {
+    float: right;
+  }
+}
+
+.header-content {
+  padding-top: 112px;
+  padding-bottom: 76px;
+  font-style: normal;
+  width: 100%;
+
+  @include mq("md") {
+    width: 100%;
+  }
+
+  @include mq("xl") {
+    width: (550/1128) * 100%;
+  }
+
+  @include e(title) {
+    font-weight: 500;
+    font-size: 53.2px;
+    line-height: 62px;
+    margin-bottom: 9px;
+  }
+
+  @include e(content) {
+    font-size: 18.2px;
+    line-height: 21px;
+    margin-bottom: 42px;
+  }
+}

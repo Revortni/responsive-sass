@@ -1,0 +1,81 @@
+.button {
+  background: $gray;
+  box-shadow: 0px 2px 2px rgba(244, 67, 54, 0.14);
+  border: none;
+  border-radius: 3px;
+  color: $white;
+  padding: 13px 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  display: inline-block;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  @include e(icon) {
+    margin-right: 3px;
+  }
+
+  /*button modifiers*/
+
+  /*button style starts*/
+
+  @include m(text) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  @include m(icon) {
+    padding: 12px;
+  }
+
+  @include m(round) {
+    border-radius: 25pc;
+  }
+
+  @include m(with-icon) {
+    padding-right: 25px;
+  }
+
+  /*button style ends*/
+
+  /*button size starts*/
+  @include m(xs) {
+    padding: 6px 15px;
+  }
+
+  @include m(s) {
+    padding: 6px 20px;
+  }
+
+  @include m(l) {
+    padding: 18px 36px;
+  }
+  /*button size ends*/
+
+  /*button color starts*/
+
+  @include m(primary) {
+    background-color: $violet;
+  }
+
+  @include m(info) {
+    background-color: $light-blue;
+  }
+
+  @include m(success) {
+    background-color: $green;
+  }
+
+  @include m(warn) {
+    background-color: $yellow;
+  }
+
+  @include m(danger) {
+    background-color: $red;
+  }
+  /*button color ends*/
+}

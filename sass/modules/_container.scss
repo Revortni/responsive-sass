@@ -1,0 +1,16 @@
+.container {
+  width: 100%;
+  max-width: 425px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @include mq("md") {
+    max-width: 786px;
+    padding: 0 24px;
+  }
+
+  @include mq("xl") {
+    max-width: 1128px;
+    padding: 0;
+  }
+}
