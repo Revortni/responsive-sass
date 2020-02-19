@@ -1,10 +1,14 @@
 .footer {
   padding-top: 32px;
   padding-bottom: 18px;
-
+  margin: 0 153px;
   @include e(nav) {
     margin: 0 auto;
     margin-bottom: 32px;
+
+    @include mq("lg") {
+      float: left;
+    }
   }
 
   @include e(link) {
@@ -21,5 +25,9 @@
     line-height: 11px;
     color: $dark-black;
     text-align: center;
+
+    @include mq("lg") {
+      float: right;
+    }
   }
 }
