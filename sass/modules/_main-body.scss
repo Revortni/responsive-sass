@@ -35,15 +35,23 @@
   }
 
   @include e(content) {
+    margin: 0 auto;
     margin-top: 38px;
     font-weight: 300;
     font-size: 17px;
     line-height: 21px;
     text-align: center;
     color: $color-text;
+
+    @include mq("md") {
+      max-width: 723px;
+    }
   }
 }
 
 .article-container {
-  padding-bottom: 100px;
+  @include mq("xl") {
+    width: 1116px;
+    margin: 0 auto;
+  }
 }

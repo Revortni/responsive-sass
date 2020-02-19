@@ -5,9 +5,16 @@
     text-align: center;
     padding-bottom: 86px;
   }
+
+  @include mq("xl") {
+    margin: 0 auto;
+    max-width: 1140px;
+  }
 }
 
 .team-member {
+  margin: 0 16px;
+
   @include e(image) {
     width: 170px;
     height: 170px;
@@ -35,7 +42,7 @@
   }
 
   @include e(details) {
-    padding: 34px 16px 24px 16px;
+    padding: 34px 0 24px 0;
     font-weight: 300;
     font-size: 14px;
     line-height: 16px;
@@ -49,6 +56,17 @@
 
     i {
       margin: 0 15px;
+    }
+  }
+
+  @include mq("xl") {
+    display: inline-block;
+    max-width: 352px;
+    margin: 0;
+    margin-right: 38px;
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }

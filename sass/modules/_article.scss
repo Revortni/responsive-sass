@@ -1,7 +1,6 @@
 .article {
   @include e(wrapper) {
     padding-bottom: 108px;
-    margin: 0 38px;
   }
 
   @include e(image) {
@@ -22,6 +21,7 @@
     line-height: 23px;
     color: $dark-gray;
     text-align: center;
+    margin-bottom: 18px;
   }
 
   @include e(content) {
@@ -30,6 +30,21 @@
     line-height: 16px;
     text-align: center;
     color: $color-text;
-    margin-top: 18px;
+    margin: 0 36px;
+    padding-bottom: 100px;
+
+    @include mq("md") {
+      max-width: 328px;
+      margin: 0 auto;
+    }
+  }
+
+  @include mq("xl") {
+    display: inline-block;
+    margin-right: 62px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
